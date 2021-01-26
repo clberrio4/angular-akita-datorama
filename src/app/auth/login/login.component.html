@@ -1,0 +1,70 @@
+<div class="flx row-all">
+    <div class="col-ss">
+
+        <div class="card card-style shadow p-3 mb-5  rounded" style="width: 20rem; background-color: transparent;">
+            <p class="text-center mt-4">Login</p>
+            <div class="card-body">
+
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit($event)" novalidate="">
+
+                    <div class="col-auto ">
+                        <label class="visually-hidden" for="autoSizingInputGroup">email</label>
+                        <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="email" class="form-control" id="autoSizingInputGroup" placeholder="email" formControlName="email" required>
+                        </div>
+
+                    </div>
+                    <div class="err-text mb-3">
+                        <span class="spn-text" *ngIf="errorEmail.touched  && errorEmail.errors!==null">{{errorEmail.errors.required?'*el
+                            correo es requerido':'*el correo no es valido'}}</span>
+                    </div>
+                    <div class="col-auto">
+                        <label class="visually-hidden" for="autoSizingInputGroup">password</label>
+                        <div class="input-group">
+                            <div class="input-group-text">*</div>
+                            <input type="password" class="form-control" id="autoSizingInputGroup" placeholder="password" formControlName="password">
+
+                        </div>
+
+                    </div>
+                    <div class="err-text mb-3">
+                        <span class="spn-text" *ngIf="errorPassword.touched  && errorPassword.errors!==null && errorPassword.errors.required===true" style="height: 12px;">
+                            * la contraseña es requerida
+                        </span>
+                    </div>
+                    <div class="text-center flex-btns">
+                        <div class="">
+                            <button type="submit" class="btn btn-primary btn-sm" [disabled]="!loginForm.valid">
+                                <div class="btn-into-txt">
+                                    <div class="d-flex-btn">
+                                        <div class="t-btn-flx">
+                                            <p class="">
+                                                login
+                                            </p>
+                                        </div>
+
+                                        <div class="sp-flex-btn">
+                                            <div class="spinner-border text-light " role="status"
+                                                style="height: 15px; width: 15px;" *ngIf="isLoading$ |async">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="">
+                            <button type="button" style="height: 40px;" class="btn btn-success btn-sm">Signup</button>
+                        </div>
+                        <div class="">
+                            <a class="forget-password">Did forget password?</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

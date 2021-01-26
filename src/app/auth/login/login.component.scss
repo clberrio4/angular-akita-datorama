@@ -1,0 +1,76 @@
+.row-all {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-image: url("https://cdn.pixabay.com/photo/2015/04/15/09/47/person-723557_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col-ss {
+    align-self: center;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.forget-password {
+    font-size: .6rem;
+}
+
+.flex-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.err-text {
+    height: 16px;
+    display: block;
+}
+
+.spn-text {
+    color: red;
+    padding-left: .5rem;
+}
+
+.d-flex-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.t-flex-btn {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.t-btn-flx {
+    display: flex;
+    align-self: center;
+    height: 20px;
+    padding-right: 2px;
+}
+
+.sp-flex-btn {
+    height: 15px;
+    width: 15px;
+    margin-bottom: 4px;
+}
+
+.btn-into-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 30px;
+}

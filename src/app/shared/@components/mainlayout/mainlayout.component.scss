@@ -1,0 +1,16 @@
+.main-container-into {
+    overflow-y: scroll;
+    padding-top: 6px;
+    width: 99%;
+    margin-left: .5%;
+    margin-right: .5%;
+    height: auto;
+    border: 1px solid red;
+    scrollbar-color: yellow #800080;
+    scrollbar-width: 10px;
+}
+
+div {
+    scrollbar-color: yellow #800080;
+    scrollbar-width: 10px;
+}

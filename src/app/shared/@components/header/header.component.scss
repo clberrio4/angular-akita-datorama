@@ -1,0 +1,23 @@
+    .back-header {
+        background-color: #03091e;
+        width: 99%;
+        margin-left: .5%;
+        margin-right: .5%;
+        border-radius: 6px;
+        position: sticky;
+        top: 4px;
+        display: inline-block;
+        z-index: 1;
+    }
+    
+    ul>li>a {
+        color: #3b85c1;
+        &:hover {
+            cursor: pointer;
+            color: white;
+        }
+    }
+    
+    .active {
+        color: white !important;
+    }
